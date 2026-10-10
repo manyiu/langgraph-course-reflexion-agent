@@ -1,0 +1,25 @@
+[project]
+name = "langgraph-course-reflexion-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Man Yiu", email = "11912398+manyiu@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "azure-identity>=1.26.0",
+    "langchain>=1.4.4",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.7.0",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.14",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langgraph-course-reflexion-agent = "langgraph_course_reflexion_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
